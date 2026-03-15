@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: paddleocr-service
+    env: docker
+    dockerfilePath: ./Dockerfile
+    repo: https://github.com/PaddlePaddle/PaddleOCR.git
+    region: any
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+
